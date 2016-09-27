@@ -3,9 +3,9 @@ $(function () {
     var memberList = [
         {"name": "Marius Stokseth", "studie": "Interaktivt design", "imgSrc": "marius.jpg"},
         {"name": "André Bellefine Lindeløff", "studie": "Interaktivt design", "imgSrc": "He-man.png"},
-        {"name": "Erik Bakkejord", "studie": "Interaktivt design", "imgSrc": "skeletor.jpg"},
-        {"name": "Lars Dahl", "studie": "Programmering", "imgSrc": "He-man.png"},
-        {"name": "Joar Kosberg", "studie": "Programmering", "imgSrc": "skeletor.jpg"}
+        {"name": "Erik Bakkejord", "studie": "Interaktivt design", "imgSrc": "erik.png"},
+        {"name": "Lars Dahl", "studie": "Programmering", "imgSrc": "lars.jpg"},
+        {"name": "Joar Kosberg", "studie": "Programmering", "imgSrc": "joar.jpg"}
     ];
     // HTML Objects
     var memberSection;
