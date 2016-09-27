@@ -6,78 +6,68 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-HzUaiJdCTIY/RL2vDPRGdEQHHahjzwoJJzGUkYjHVzTwXFQ2QN/nVgX7tzoMW3Ov" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="Style/style.css" type="text/css">
+    <link rel="stylesheet" href="Style/bootswatchTheme.min.css" type="text/css">
 
-    <style>
-        .img-size {
-            height: 75px;
-        }
 
-        .margin-right {
-            margin-right: 15px;
-        }
-    </style>
 </head>
 <body>
-<div class="container" class="row">
+<div class="container">
     <header class="page-header">
         <h1>Some sort of CV</h1>
     </header>
 
-    <main>
-        <section id="members" >
-            <h3>Medlemmer</h3>
-            <!--
-                        <div class="table-responsive">
-                            <table class="table table-striped ">
-                                <tr>
-                                    <th>Navn</th>
-                                    <th>Studie</th>
-                                    <th> ??</th>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">Erik
-                                        Bakkejord
-                                    </td>
-                                    <td>Interkativt design</td>
-                                    <td> ??</td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">André
-                                        Bellefine Lindeløff
-                                    </td>
-                                    <td>Interkativt design</td>
-                                    <td> ??</td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">Marius
-                                        Stokseth
-                                    </td>
-                                    <td>Interkativt design</td>
-                                    <td> ??</td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">Lars Dahl
-                                    </td>
-                                    <td>Programmering</td>
-                                    <td> ??</td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">Joar Kosberg
-                                    </td>
-                                    <td>Programmering</td>
-                                    <td> ??</td>
-                                </tr>
-                            </table>
-                        </div>
-            -->
+    <main class="row">
+        <section id="members" class="col-md-12">
+            <h2>Medlemmer</h2>
         </section>
 
-        <section id="questions"></section>
-        <section id="arguments"></section>
+        <section id="description">
+            <h2>Oss</h2>
+
+            <h4>Vi er en gjeng motiverte unge karer, klare for nye eventyr! VI kjenner hverandre godt fra tidligere og
+                er
+                trygg på hverandre. Tidligere har vi jobbet i flere prosjekter sammen, noe som har fungert meget godt.
+                Vi er glade i utfordringer og vil gjerne lære oss nye teknologier og språk. Gjennom tidligere prosjekter
+                har vi fått god kunnskap om bruk av Git og agile arbeidsmetoder. </h4>
+        </section>
+        <section id="arguments">
+
+        </section>
         <section id="weaknesses"></section>
         <section id="earlierProjects"></section>
-        <section id="technologies"></section>
+        <section id="technologies">
+            <h2>Teknologier</h2>
+            <section class="row">
+                <section id="frontend" class="col-md-4">
+                    <h3>Frontend</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">HTML5</li>
+                        <li class="list-group-item">CSS3</li>
+                        <li class="list-group-item">Bootstrap</li>
+                        <li class="list-group-item">jQuery</li>
+                    </ul>
+                </section>
+                <section id="backend" class="col-md-4">
+                    <h3>Backend</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Node.js/Express</li>
+                        <li class="list-group-item">.NET</li>
+                        <li class="list-group-item">Java EE (JAX-RS ++)</li>
+                        <li class="list-group-item">REST-arkitektur</li>
+                    </ul>
+                </section>
+                <section id="prorgammingLanguages" class="col-md-4">
+                    <h3>Programmingspråk</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">C#</li>
+                        <li class="list-group-item">SQL</li>
+                        <li class="list-group-item">PHP</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
     </main>
 </div>
 

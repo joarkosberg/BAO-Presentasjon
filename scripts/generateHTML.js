@@ -3,9 +3,9 @@ $(function () {
     var memberList = [
         {"name": "Marius Stokseth", "studie": "Interaktivt design", "imgSrc": "He-man.png"},
         {"name": "André Bellefine Lindeløff", "studie": "Interaktivt design", "imgSrc": "He-man.png"},
-        {"name": "Erik Bakkejord", "studie": "Interaktivt design", "imgSrc": "He-man.png"},
+        {"name": "Erik Bakkejord", "studie": "Interaktivt design", "imgSrc": "skeletor.jpg"},
         {"name": "Lars Dahl", "studie": "Programmering", "imgSrc": "He-man.png"},
-        {"name": "Joar Kosberg", "studie": "Programmering", "imgSrc": "He-man.png"}
+        {"name": "Joar Kosberg", "studie": "Programmering", "imgSrc": "skeletor.jpg"}
     ];
     // HTML Objects
     var memberSection;
@@ -27,7 +27,6 @@ $(function () {
         var count = 0;
         $.each(memberList, function () {
             count++;
-            console.log(count);
             var name = this.name;
             var study = this.studie;
             var imgSrc = this.imgSrc;
@@ -44,8 +43,8 @@ $(function () {
                     src: "img/" + imgSrc
                 }
             );
-            var $name = $("<p>").html(name);
-            var $study = $("<p>").html(study);
+            var $name = $("<h4>").html(name);
+            var $study = $("<h5>").html(study);
 
             $article.append(
                 $img,
@@ -56,7 +55,7 @@ $(function () {
 
         });
         //$("article", memberSection).addClass("col-md-4 col-sm-12");
-        $("img", memberSection).addClass("img-responsive");
+        $("img", memberSection).addClass("img-responsive img-thumbnail");
 
 
     }
