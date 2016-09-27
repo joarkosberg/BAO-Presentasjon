@@ -3,47 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Bachelor CV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-HzUaiJdCTIY/RL2vDPRGdEQHHahjzwoJJzGUkYjHVzTwXFQ2QN/nVgX7tzoMW3Ov" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+
+    <style>
+        .img-size{
+            height: 75px;
+        }
+        .margin-right{
+            margin-right: 15px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
-    <header>
-        <h3>Some sort of CV</h3>
+    <header class="page-header">
+        <h1>Some sort of CV</h1>
     </header>
 
     <main>
         <section id="members">
-            <table>
-                <tr>
-                    <th>Navn</th>
-                    <th>Studie</th>
-                    <th> ??</th>
-                </tr>
-                <tr>
-                    <td>Erik Bakkejord</td>
-                    <td>Interkativt design</td>
-                    <td> ??</td>
-                </tr>
-                <tr>
-                    <td>André Bellefine Lindeløff</td>
-                    <td>Interkativt design</td>
-                    <td> ??</td>
-                </tr>
-                <tr>
-                    <td>Marius Stokseth</td>
-                    <td>Interkativt design</td>
-                    <td> ??</td>
-                </tr>
-                <tr>
-                    <td>Lars Dahl</td>
-                    <td>Programmering</td>
-                    <td> ??</td>
-                </tr>
-                <tr>
-                    <td>Joar Kosberg</td>
-                    <td>Programmering</td>
-                    <td> ??</td>
-                </tr>
-            </table>
+            <h3>Medlemmer</h3>
+
+            <div class="table-responsive">
+                <table class="table table-striped ">
+                    <tr>
+                        <th>Navn</th>
+                        <th>Studie</th>
+                        <th> ??</th>
+                    </tr>
+                    <tr>
+                        <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">Erik Bakkejord</td>
+                        <td>Interkativt design</td>
+                        <td> ??</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">André Bellefine Lindeløff</td>
+                        <td>Interkativt design</td>
+                        <td> ??</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">Marius Stokseth</td>
+                        <td>Interkativt design</td>
+                        <td> ??</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">Lars Dahl</td>
+                        <td>Programmering</td>
+                        <td> ??</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/He-man.png" class="img-fluid img-thumbnail img-size margin-right">Joar Kosberg</td>
+                        <td>Programmering</td>
+                        <td> ??</td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
         <section id="questions"></section>
@@ -53,5 +70,12 @@
         <section id="technologies"></section>
     </main>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
