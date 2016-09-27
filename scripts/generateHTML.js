@@ -40,7 +40,8 @@ $(function () {
 
             var $img = $("<img>").attr(
                 {
-                    src: "img/" + imgSrc
+                    src: "img/" + imgSrc,
+                    alt: name,
                 }
             );
             var $name = $("<h4>").html(name);
