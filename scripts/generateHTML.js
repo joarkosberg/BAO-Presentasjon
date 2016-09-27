@@ -1,7 +1,7 @@
 $(function () {
     // variables
     var memberList = [
-        {"name": "Marius Stokseth", "studie": "Interaktivt design", "imgSrc": "He-man.png"},
+        {"name": "Marius Stokseth", "studie": "Interaktivt design", "imgSrc": "marius.jpg"},
         {"name": "André Bellefine Lindeløff", "studie": "Interaktivt design", "imgSrc": "He-man.png"},
         {"name": "Erik Bakkejord", "studie": "Interaktivt design", "imgSrc": "skeletor.jpg"},
         {"name": "Lars Dahl", "studie": "Programmering", "imgSrc": "He-man.png"},
