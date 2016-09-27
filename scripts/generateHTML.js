@@ -13,7 +13,7 @@ $(function () {
     // init
     var init = function () {
         // set HTML-objects
-        memberSection = $("#members");
+        memberSection = $("#membersContainer");
         // set events
         console.log("init works");
         // on page load
