@@ -47,7 +47,7 @@ $(function () {
             );
             var $name = $("<h4>").html(name);
             var $study = $("<h5>").html(study);
-            var $git = $("<h5>").html(git);
+            var $git = $("<a href=''>").html(git);
 
             $article.append(
                 $img,
