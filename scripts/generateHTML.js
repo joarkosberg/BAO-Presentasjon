@@ -1,11 +1,11 @@
 $(function () {
     // variables
     var memberList = [
-        {"name": "Marius Stokseth", "studie": "Interaktivt design", "imgSrc": "marius.jpg"},
+        {"name": "Marius Stokseth", "studie": "Interaktivt design", "imgSrc": "marius.jpg", "E-mail": "stomar14@student.westerdals.no", "Github": ""},
         {"name": "André Bellefine Lindeløff", "studie": "Interaktivt design", "imgSrc": "andre.jpg"},
         {"name": "Erik Bakkejord", "studie": "Interaktivt design", "imgSrc": "erik.png"},
-        {"name": "Lars Dahl", "studie": "Programmering", "imgSrc": "lars.jpg"},
-        {"name": "Joar Kosberg", "studie": "Programmering", "imgSrc": "joar.jpg"}
+        {"name": "Lars Dahl", "studie": "Programmering", "imgSrc": "lars.jpg", "git": "https://github.com/laerdh"},
+        {"name": "Joar Kosberg", "studie": "Programmering", "imgSrc": "joar.jpg", "git": "https://github.com/joarkosberg"}
     ];
     // HTML Objects
     var memberSection;
@@ -30,6 +30,7 @@ $(function () {
             var name = this.name;
             var study = this.studie;
             var imgSrc = this.imgSrc;
+            var git = this.git;
 
             var $article;
             if(count == 4){
@@ -46,16 +47,17 @@ $(function () {
             );
             var $name = $("<h4>").html(name);
             var $study = $("<h5>").html(study);
+            var $git = $("<h5>").html(git);
 
             $article.append(
                 $img,
                 $name,
-                $study
+                $study,
+                $git
             );
             memberSection.append($article);
 
         });
-        //$("article", memberSection).addClass("col-md-4 col-sm-12");
         $("img", memberSection).addClass("img-responsive img-thumbnail");
 
 
