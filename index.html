@@ -1,113 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Bachelor CV</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-HzUaiJdCTIY/RL2vDPRGdEQHHahjzwoJJzGUkYjHVzTwXFQ2QN/nVgX7tzoMW3Ov" crossorigin="anonymous">
-    <link rel="stylesheet" href="Style/style.css" type="text/css">
-    <link rel="stylesheet" href="Style/bootswatchTheme.min.css" type="text/css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
 
+<title>Team Bakkis</title>
+
+<link rel="stylesheet" type="text/css" href="bootstrap-jquery/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
-<div class="container">
-    <header class="page-header">
-        <h1>Westerdals Bachelor Oppgave</h1>
-    </header>
 
-    <main class="row">
-
-        <section id="description" class="col-md-12">
-            <h2>Oss</h2>
-
-            <h4>Vi er en gjeng motiverte unge karer, klare for nye eventyr! VI kjenner hverandre godt fra tidligere og
-                er
-                trygg på hverandre. Tidligere har vi jobbet i flere prosjekter sammen, noe som har fungert meget godt.
-                Vi er glade i utfordringer og vil gjerne lære oss nye teknologier og språk. Gjennom tidligere prosjekter
-                har vi fått god kunnskap om bruk av Git og agile arbeidsmetoder. </h4>
-
-            <h3>Tidligere prosjekter</h3>
-
-            <div class="col-md-3">
-                <a href="http://pj3100.ledahl.com/">PJ3100 - Oss westerdals app</a>
-
-                <p>Brukernavn: Pj3100 Passord: Ca2015ca</p>
+    
+        <section id="pageHeader">
+            <img class="header-img" src="images/challenge.jpg" alt="utfordring">
+            <h1>Vi tar utfordringen!</h1>
+        </section>
+    
+    
+    <div id="pageTop" class="container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button class="collapsed navbar-toggle" type="button" data-target="#navbar" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="gotoPageTop" href="#">Team Bakkis</a>
             </div>
-            <div class="col-md-3">
-                <a href="http://www.niklasdyrhaug.no">Niklasdyrhaug.no</a>
-
-                <p>Et prosjekt laget i CMS</p>
+            
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a id="gotoPeople" href="#">Teamet</a></li>
+                    <li><a id="gotoWishes" href="#">Ønsker</a></li>
+                    <li><a id="gotoTech" href="#">Teknologier</a></li>
+                    <li><a id="gotoProjects" href="#">Prosjekter</a></li>
+                    <li><a id="gotoKontakt" href="#">Kontakt</a></li>
+                </ul>  
             </div>
-            <div class="col-md-3">
-                <a href="https://tubefedzt.herokuapp.com/">TubeFedzt</a>
-
-                <p>Et prosjekt laget i Ruby on Rails</p>
+        </nav>
+        
+        
+        
+        <section id="slogan animation-element slide-left" class="row">
+            <h2 class="center-txt">Om oss</h2>
+            <img class="header-dash" src="images/header_dash.png" alt="header dash">
+            <div class="col-sm-12 center-txt">
+                <h3 class="textsize">
+                    Vi er en tverrfaglig gruppe bestående av to studenter fra studieretningen  programmering og tre fra interaktivt design. Vi har alle stor interesse for teknologi, og vi er svært ivrige etter å lære mer om ulike teknologier og arbeidsmetoder. Som gruppe har vi høye ambisjoner, og sammen skal vi stå på for å oppnå et meget godt resultat.
+                <br><br>
+                     Vi har et ønske om å kunne gjøre en forskjell for bedriften der vi utfører vår bacheloroppgave. Fra tidligere prosjekter på studiet har vi vist gode samarbeidsevner, både innad i gruppen og med andre studenter. Vi har i disse prosjektene oppnådd svært gode resultater, og dette danner et godt grunnlag for fremtidige prosjekter.
+                <br><br>
+                    Så langt i studiet har vi opparbeidet oss et bredt spekter av erfaring. Vi har fått god faglig tyngde ved Westerdals ACT. I tillegg har vi tilegnet oss kunnskap på egenhånd, enten i åpne prosjekter, eller privat. Vi har hatt tre store prosjekter i løpet av studiet der vi har fått erfaring i bruk av iterative og smidige arbeidsmetoder som Scrum. Bruken av slike arbeidsmetoder har bidratt til strukturerte og effektiviserte utviklingsprosesser hvor gode resultater har blitt levert på løpende bånd. 
+                <br><br>
+                    Ta gjerne en titt på oversikten lenger ned på siden over språk og teknologier vi har erfaringer med. Utover dette er vi svært positive til nye utfordringer.
+                <br><br>
+                    Alle på gruppen er motivert til å gjøre sitt beste for din bedrift!
+                </h3>
             </div>
+        </section>  
+        
+
+        <section id="people" class="row animation-element slide-left">
+            <h2>Teamet</h2>
+            <img class="header-dash" src="images/header_dash.png" alt="header dash">
+            
+          <div class="col-sm-4 col-md-3">
+            <div>
+                <img class="img-responsive" src="images/joar.jpg" alt="Joar">
+                <button class="lesmer-btn" type="button" data-toggle="modal" data-target="#joarModal">Les mer</button>
+              <div class="caption">
+                <p class="people-name">Joar Kosberg</p>
+                <p class="people-study">Programmering</p>
+                <a href="mailto:kosjoa14@student.westerdals.no">kosjoa14@student.westerdals.no</a>
+                <p class="people-number">954 98 090</p>
+                <p class="git">Git: <a href="https://github.com/joarkosberg">https://github.com/joarkosberg</a></p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-sm-4 col-md-3">
+            <div>
+                <img class="img-responsive" src="images/erik.jpg" alt="Erik">
+                <button class="lesmer-btn" type="button" data-toggle="modal" data-target="#erikModal">Les mer</button>
+              <div class="caption">
+                <p class="people-name">Erik Bakkejord</p>
+                <p class="people-study">Interaktivt Design</p>
+                <a href="mailto:bakeri14@student.westerdals.no">bakeri14@student.westerdals.no</a>
+                <p class="people-number">958 62 224</p>
+                <p class="git"></p>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-4 col-md-3">
+            <div>
+                <img class="img-responsive" src="images/lars.jpg" alt="Lars">
+                <button class="lesmer-btn" type="button" data-toggle="modal" data-target="#larsModal">Les mer</button>
+              <div class="caption">
+                <p class="people-name">Lars Dahl</p>
+                <p class="people-study">Programmering</p>
+                <a href="mailto:dahlar14@student.westerdals.no">dahlar14@student.westerdals.no</a>
+                <p class="people-number">958 29 578</p>
+                <p class="git">Git: <a href="https://github.com/laerdh">https://github.com/laerdh</a></p>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-4 col-md-3">
+            <div>
+                <img class="img-responsive" src="images/andre.jpg" alt="Andre">
+                <button class="lesmer-btn" type="button" data-toggle="modal" data-target="#andreModal">Les mer</button>
+              <div class="caption">
+                <p class="people-name">André Bellefine Lindeløff</p>
+                <p class="people-study">Interaktivt Design</p>
+                <a href="mailto:beland14@student.westerdals.no">beland14@student.westerdals.no</a>
+                <p class="people-number">938 87 997</p>
+                <p class="git"></p>
+              </div>
+            </div>
+          </div>
+            
+
+          <div class="col-sm-4 col-md-3">
+            <div>
+                <img class="img-responsive" src="images/marius.jpg" alt="Marius">
+                <button class="lesmer-btn" type="button" data-toggle="modal" data-target="#mariusModal">Les mer</button>
+              <div class="">
+                <p class="people-name">Marius Stokseth</p>
+                <p class="people-study">Interaktivt Design</p>
+                <a href="mailto:stomar14@student.westerdals.no">stomar14@student.westerdals.no</a>
+                <p class="people-number">957 51 849</p>
+                <p class="git"></p>
+              </div>
+            </div>
+          </div>
+        </section>    
+        
+        
+        
+<div class="modal fade" id="joarModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Joar Kosberg</h4>
+      </div>
+      <div class="modal-body">
+        <p>Jeg er 22 år fra Rennebu i Sør-Trøndelag. Studieretningen min er programmering, der hvor jeg er mest interessert i backend og mobil utvikling. Det jeg syns er mest spennende i denne industrien er at alt er i stadig forandring, mulighetene blir bare flere og flere. Dette fører til at man alltid får nye utfordringer og det er alltid noe nytt å ta tak i. Har erfaring fra flere mobil rammeverk som Android, iOS, Xamarin og ReactNative. Teknologi og musikk er ellers de to største interessene mine på fritiden.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->            
+
+<div class="modal fade" id="erikModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Erik Bakkejord</h4>
+      </div>
+      <div class="modal-body">
+        <p>Jeg er en interaksjonsdesign-student på 32 år fra Bodø.<br><br>
+          Har tidligere vært langrennsløper med sølv fra Junior-VM og 5 World-Cup starter. Bestemte med
+          for å legge skiene på hyllen for 2,5 år siden, og rettet fokus mot teknologi, noe jeg har vært interessert i helt siden helt siden barndommen.<br><br>
+          Jeg brenner for alle steg i webutvikling og har brukt mye tid på å studere rammeverk som Laravel, Angular 2 og React på egenhånd.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->            
+
+<div class="modal fade" id="larsModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Lars Dahl</h4>
+      </div>
+      <div class="modal-body">
+        <p>Jeg er 29 år gammel og kommer fra Stathelle i Telemark.</p>
+	<p>Jeg har teknologi og musikk som mine største interesser. Som utvikler trives jeg både med frontend- og backend utvikling, men også i rollen som DevOps, som jeg har fått litt erfaring med i tidligere skoleprosjekter.</p>
+	<p> Fritiden går for det meste med til gitarspill, idrett eller andre sosiale aktiviteter.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->            
+
+<div class="modal fade" id="andreModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">André Bellefine Lindeløff</h4>
+      </div>
+      <div class="modal-body">
+        <p>Jeg er 27 år gammel, fra Fredrikstad, og bor nå på st. Hanshaugen. Har holdt på med datamaskiner helt siden vi fikk vår første hjemme-PC som barn. På fritiden liker jeg å utforske nye teknologier, lese bøker, og spille brett-, og PC-spill.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->            
+
+<div class="modal fade" id="mariusModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Marius Stokseth</h4>
+      </div>
+      <div class="modal-body">
+        <p>Jeg er 25 år, oppvokst i Ytre Enebakk. Bor i Oslo med min samboer, trives best med frontend utvikling. Min andre lidenskap er fotball, og spesielt Manchester United som jeg drar å ser live 1-2 ganger i året. Ellers er jeg en positiv person som liker utfordringer.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->            
+
+
+        
+        <section id="wishes" class="row animation-element slide-left">
+            <h2>Ønsker</h2>
+            <img class="header-dash" src="images/header_dash.png" alt="header dash">
+            
+          <div class="col-sm-12">
+                <p class="people-number">Gruppen er mest interessert i å utvikle en web- eller en mobil-applikasjon. Språket eller rammeverket det blir skrevet i er ikke viktig for oss, da vi godt kan skrive i kjente språk og rammeverk men gjerne tar på oss nye utfordringer. Med det sagt er vi åpen for andre typer produkt/prosjekter også. 
+                <br><br>
+                Vi trives best når vi lærer oss ny teknologi eller utvider horisonten vår innenfor noe vi allerede kjenner til. Forrige skoleår hadde vi et prosjekt som gikk over begge semestrene, her gikk vi langt utover det vi hadde i pensum for å få løsningen til å fungere som vi ville. Dette er beste eksempelet vi kan gi på vår lidenskap til teknologi og gode løsninger.</p>
+          </div>
+        </section>
+        
+        
+        
+        <section id="tech" class="row animation-element slide-left">
+            <div class="col-sm-12">
+                <h2>Teknologier</h2>
+                <img class="header-dash" src="images/header_dash.png" alt="header dash">
+                <h3 class="textsize">Teknologier vi har brukt og har erfaring med.</h3>
+            </div>
+                <div class="col-sm-3">
+                    <div class="list-group">
+                      <li class="list-group-item disabled">Frontend</li>
+                      <li class="list-group-item">HTML5</li>
+                      <li class="list-group-item">CSS3</li>
+                      <li class="list-group-item">W3 CSS</li>
+                      <li class="list-group-item">Bootstrap</li>
+                      <li class="list-group-item">jQuery</li>
+                      <li class="list-group-item">WordPress</li>
+                    </div>  
+                </div>
+                
+                <div class="col-sm-3">
+                    <div class="list-group">
+                      <li class="list-group-item disabled">Backend</li>
+                      <li class="list-group-item">Node.js/Express</li>
+                      <li class="list-group-item">.NET</li>
+                      <li class="list-group-item">Java EE</li>
+                      <li class="list-group-item">REST-arkitektur</li>
+                    </div>  
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="list-group">
+                      <li class="list-group-item disabled">Mobil Rammeverk</li>
+                      <li class="list-group-item">Android</li>
+                      <li class="list-group-item">iOS</li>
+                      <li class="list-group-item">Xamarin</li>
+                      <li class="list-group-item">React Native</li>
+                    </div>  
+                </div>
+                
+                <div class="col-sm-3">
+                    <div class="list-group">
+                      <li class="list-group-item disabled">Programmingspråk</li>
+                      <li class="list-group-item">Java</li>
+                      <li class="list-group-item">C#</li>
+                      <li class="list-group-item">SQL</li>
+                      <li class="list-group-item">PHP</li>
+                      <li class="list-group-item">Javascript</li>
+                      <li class="list-group-item">Ruby</li>
+                      <li class="list-group-item">Swift</li>
+                      <li class="list-group-item">C</li>
+                    </div>  
+                </div>
+        </section>
+        
+        <section id="projects" class="row animation-element slide-left">
+            <h2>Tidligere prosjekter</h2>
+            <img class="header-dash" src="images/header_dash.png" alt="header dash">
+            
+          <div class="col-sm-4 col-md-4">
+            <div>
+                <a href="http://pj3100.ledahl.com/" target="_blank"><img class="img-responsive" src="images/woact-app.jpg" alt="Westerdals AT webside"></a>
+              <div class="caption">
+                <p class="people-name"><a href="http://pj3100.ledahl.com/" target="_blank">PJ3100 - Oss westerdals app</a></p>
+                <p class="people-number">Prosjekt for å forenkle hverdagen til studenter på Westerdals. Vi utviklet en mobilapp og webapplikasjon med felles backend. Applikasjonen inneholder blant annet forelesningsplan, romoversikt, tilbakemelding, informasjon og mer.</p>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-4 col-md-4">
+            <div>
+                <a href="http://niklasdyrhaug.no/" target="_blank"><img class="img-responsive" src="images/niklas-dyrhaug.jpg" alt="Niklas Dyrhaug"></a>
+              <div class="caption">
+                <p class="people-name"><a href="http://niklasdyrhaug.no/" target="_blank">NiklasDyrhaug.no</a></p>
+                <p class="people-study">Offisiell nettside for Norges mest sexy mann i 2015 og en av verdens beste langrennsløpere, Niklas Dyrhaug.</p>
+                <p class="people-number">Siden er satt opp i Wordpress med utvikling av egen resultatservice-plugin.</p>
+              </div>
+            </div>
+          </div>        
+        
+          <div class="col-sm-4 col-md-4">
+            <div>
+                <a href="https://tubefedzt.herokuapp.com/" target="_blank"><img class="img-responsive" src="images/tubefedzt.jpg" alt="TubeFedzt"></a>
+              <div class="caption">
+                <p class="people-name"><a href="https://tubefedzt.herokuapp.com/" target="_blank">TubeFedzt</a></p>
+                <p class="people-study">Tubefedzt er en nettside laget med Ruby on Rails. Det er en side for musikk avspilling i sosiale sammenhenger, dette ved hjelp av youtube sitt API.</p>
+              </div>
+            </div>
+          </div>        
         </section>
 
-        <section id="members" class="col-md-12">
-            <h2>Medlemmer</h2>
-                <div class="row" id="membersContainer"></div>
+
+        <section id="kontakt" class="animation-element slide-left">
+                <h2>Kontakt</h2>
+                <img class="header-dash" src="images/header_dash.png" alt="header dash">
+                <p><b>Marius Stokseth</b></p>
+                <p><a href="mailto:stomar14@student.westerdals.no">stomar14@student.westerdals.no</a></p>
+                <p>Telefon: 957 51 849</p>
         </section>
-
-
-        <section id="arguments">
-
-        </section>
-        <section id="contactInfo" class=col-md-12>
-            <h2>Kontakt informasjon</h2>
-            <p>Marius Stokseth</p>
-            <p>Email: stomar14@student.westerdals.no</p>
-            <p>Mobil: 95751849</p>
-        </section>
-        <section id="technologies" class="col-md-12">
-            <h2>Teknologier</h2>
-            <section class="row">
-                <section id="frontend" class="col-md-4">
-                    <h3>Frontend</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">HTML5</li>
-                        <li class="list-group-item">CSS3</li>
-                        <li class="list-group-item">Bootstrap</li>
-                        <li class="list-group-item">jQuery</li>
-                    </ul>
-                </section>
-                <section id="backend" class="col-md-4">
-                    <h3>Backend</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">Node.js/Express</li>
-                        <li class="list-group-item">.NET</li>
-                        <li class="list-group-item">Java EE</li>
-                        <li class="list-group-item">REST-arkitektur</li>
-                    </ul>
-                </section>
-                <section id="prorgammingLanguages" class="col-md-4">
-                    <h3>Programmingspråk</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">Java</li>
-                        <li class="list-group-item">C#</li>
-                        <li class="list-group-item">SQL</li>
-                        <li class="list-group-item">PHP</li>
-                        <li class="list-group-item">Javascript</li>
-                        <li class="list-group-item">Ruby</li>
-                        <li class="list-group-item">Swift</li>
-                        <li class="list-group-item">C</li>
-                    </ul>
-                </section>
-            </section>
-        </section>
-    </main>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"
-        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-
-<script src="scripts/generateHTML.js"></script>
-
+    </div><!-- end container -->
+    
+<script src="bootstrap-jquery/js/jquery.js"></script>
+<script src="bootstrap-jquery/js/bootstrap.min.js"></script>
+<script src="js/animate.js"></script>
+<script>
+    $("#gotoWishes").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#wishes").offset().top
+        }, 1500);
+    });
+    $("#gotoProjects").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top
+        }, 1500);
+    });
+    $("#gotoKontakt").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#kontakt").offset().top
+        }, 1500); 
+    });
+    $("#gotoTech").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#tech").offset().top
+        }, 1500); 
+    });
+    $("#gotoPeople").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#people").offset().top
+        }, 1500); 
+    });
+    $("#gotoPageTop").click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1500); 
+    });    
+</script>
 </body>
 </html>
